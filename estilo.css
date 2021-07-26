@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+
+}
+html {
+    cursor: url(imagens/WhatsApp.png)30 30, auto;
+}
+body {
+    font-size: sans-serif;
+    cursor: url('imagens/GitHub.png')
+}
+
+.menu-topo {
+    position: relative;
+    position: fixed;
+    
+    width: 100%;
+    height: 70px;
+    background:  #696969;
+    
+}
+.container .logo .contato img {
+    width: 80px;
+    height: 40px;
+}
+
+.menu-topo nav ul {
+    display: flex;  
+    justify-content: space-evenly;    
+}
+
+.menu-topo nav ul li {
+    display: flex; 
+    align-items: center; 
+
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    font-size: 2rem;
+    cursor: pointer; 
+    /* cursor: url('https://w7.pngwing.com/pngs/843/168/png-transparent-computer-mouse-magic-mouse-computer-icons-pointer-computer-mouse-purple-angle-electronics.png') */
+    
+}
+
+.menu-topo nav ul li a {
+    color: white;
+}
+.menu-topo nav ul li:hover {
+    background: rgb(136, 127, 127);
+}
+.menu-topo nav ul li a:hover {
+    color: black;
+}
+
+
+
+
+.container .logo {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+    height: 100%;
+    color: white;
+    background: #1F2C3Fb6;
+}
+
+.container .logo .foto-perfil {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.container {
+    background-image:url('https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=969&q=80') ;
+    background-size: cover;
+    height: 70vh;
+
+    background-attachment: fixed;
+}
+
+section {
+    height: 80vh;
+    border-bottom: 3px ridge #ccc; 
+    background: #ccc; 
+}
+section h2 {
+    font-size: 3rem;
+    margin-top: 100px;
+    font-family: fantasy;
+        
+}
+
+section.sobre-mim {
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+}
+
+section.sobre-mim p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+section.habilidades {
+    display: flex;
+    justify-content:space-around;
+    align-items: end;
+}
+
+section.habilidades .hard-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height:70vh;
+    text-align: center;
+
+    padding-top: 50px;
+    font-size: 2rem;
+}
+
+section.habilidades .soft-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 50%;
+    height:70vh;
+    text-align: center;
+    padding-top: 50px;
+
+    font-size: 2rem;
+}
+
+section.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    background: ccc;
+    /* height: 100%; */
+}
+
+section.projetos ul li {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+section.projetos ul li a {
+    color: white;
+    padding: 20px;
+    border: dotted 1px  black;
+    background: rgb(171, 200, 103);
+}
+
+section.projetos ul li a:hover {
+    color: black;
+    background: rgb(47, 121, 134);
+    padding: 20px 25px;
+} 
+
+
+footer {
+    height: 100px;
+    background: rgb(150, 150, 150);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+----------------------  
+        RESPONSIVIDADE
+*/
+
+    
+
+@media (max-width: 375px) {
+
+    header .menu-topo  ul li a {
+        font-size: 1.5rem;
+        
+    }
+
+   
+    section {
+        height:70vh;
+    }
+
+    section.habilidades {
+        height: 100%;
+        
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    section.habilidades h2 {
+        order: 1;
+      
+    }
+    section.habilidades .soft-skills {
+        margin: 20px 0;
+        order: 2;
+       
+       height: 100%;
+    }
+    section.habilidades .hard-skills {
+        margin: 20px 0;
+        order: 3;
+        height: 100%;
+    }
+
+    section.projetos {
+        height: 70vh;
+        
+    }
+
+    section.projetos ul {
+    margin: 10px;
+    }
+    section.projetos ul li a {
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width: 540px) {
+
+    header .menu-topo  ul li a {
+        font-size: 1.5rem;
+        
+    }
+
+    section.habilidades {
+        height: 100%;
+        
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    section.habilidades h2 {
+        order: 1;
+      
+    }
+    section.habilidades .soft-skills {
+        margin: 20px 0;
+        order: 2;
+       
+       height: 100%;
+    }
+    section.habilidades .hard-skills {
+        margin: 20px 0;
+        order: 3;
+        height: 100%;
+    }
+
+    section.projetos {
+        height: 100%;
+        
+    }
+
+    section.projetos ul {
+    margin: 10px;
+    }
+    section.projetos ul li a {
+        font-size: 1rem;
+    }
+    
+}
+
+
+
